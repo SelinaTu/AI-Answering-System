@@ -8,6 +8,7 @@ calories and ingredient information using a Bedrock model.
 ## Requirements
 - Python 3.10+
 - AWS credentials with access to Textract and Bedrock
+- Optional: microphone for voice input
 
 Install dependencies with:
 ```bash
@@ -19,3 +20,7 @@ Run the CLI and pass an image of a menu:
 ```bash
 python -m ai_food_advisor.app path/to/menu.jpg --region us-east-1
 ```
+
+By default the application asks preference questions using text prompts in your
+terminal. Add `--voice` if you want to answer those questions using your
+microphone instead.
